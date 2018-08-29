@@ -5,19 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Currency</title>
+  <title>New user</title>
 </head>
 <body>
-  <div class="container-fluid">
-  <div class="row justify-content-center pt-5 pb-5">
+  <div class="container">
+  <div class="row justify-content-center pt-5 pb-3">
     <h1>Live currency subscribe</h1>
   </div>
-    <div class="row justify-content-center mb-5">
-    <div class="col-6">
+  <div class="row justify-content-center mb-5">
+    <h2>Create new account</h2>
+  </div>
+  <div class="row justify-content-center mb-5">
+    <div class="col-3 text-center">
+      <div>
+        <img src="https://png.icons8.com/ios/500/000000/user-male-circle-filled.png" width="250">
+      </div>
+      <div class="custom-file">
+         <input type="file" class="custom-file-input" id="upload">
+         <label class="custom-file-label text-left" for="upload">Upload image</label>
+      </div>
     </div>
-    </div>
-    <div class="row justify-content-center">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Main page</a>
+    <div class="col-7">
+      <form>
+        <div class="form-group">
+          <label for="email">Email address*:</label>
+          <input type="email" class="form-control form-control-lg" id="email" aria-describedby="email-help" placeholder="Enter your email adress">
+          <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       </div>
+       <div class="form-group">
+          <label for="password">Password*:</label>
+          <input type="password" class="form-control form-control-lg mb-2" id="password" placeholder="At least 9 characters">
+          <input type="password" class="form-control form-control-lg" id="password" placeholder="Repeat password">
+       </div>
+       <div class="form-group">
+          <label for="name">Full name:</label>
+          <input type="text" class="form-control form-control-lg mb-2" id="name" placeholder="First name">
+          <input type="text" class="form-control form-control-lg" id="last-name" placeholder="Last name">
+       </div>
+       <hr>
+       <small class="form-text text-muted">All fields with * should be filled obligatory!</small>
+       <div class="form-check mt-4 mb-4">
+          <input type="checkbox" class="form-check-input" id="subscribe">
+          <label class="form-check-label" for="subscribe">Subscribe everyday currency news</label>
+           <small id="subscribe" class="form-text text-muted">By clicking on "Subscribe" button, you agree to receive currency info on your Email</small>
+       </div>
+       <button type="submit" class="btn btn-primary btn-lg">Create account</button>
+       <a class="btn btn-primary btn-lg" href="index.html">Main page</a>
+        </form>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
